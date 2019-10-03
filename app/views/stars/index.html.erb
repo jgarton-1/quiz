@@ -1,1 +1,20 @@
 <h1>Shoot for the Stars!</h1>
+<br />
+<br />
+<div class="text-center">
+<%= link_to 'Add Star', new_star_path, class: 'btn btn-success' %>
+</div>
+<br />
+<br />
+
+
+<%= @stars.each do |star| %>
+<div class="row">
+<div class="booyah-box offset-5">
+  <h3><%= star.name %></h3><br />
+  <p><%= star.desription %></p>
+  <br />
+  <br />
+  </div>
+</div>
+  <% end %>
